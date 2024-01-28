@@ -9,11 +9,33 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_bloc: ^8.1.3 # Flutter integration for the Bloc state management library
+  bloc: ^8.1.2 # Bloc state management library
+
+  get_it: ^7.6.7 # Service Locator for dependency injection
+
+  dio: ^5.4.0 # Powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc.
+  retrofit: ^4.0.3 # A type conversion Dio client generator
+  json_annotation: ^4.8.1 # Classes and helper functions that support JSON serialization and deserialization
+  equatable: ^2.0.5 # Helper to implement equality without needing to explicitly override == and hashCode
+
+  analyzer: ^6.2.0 # Library for parsing and analyzing Dart code
+
+  go_router: ^13.1.0 # Router for Flutter web and native
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
-
+  flutter_lints: ^3.0.1 # Package providing recommended lints for Flutter apps, packages, and plugins
+  mobx_codegen: ^2.1.1 # Code generator for MobX that adds support for annotating your code with @observable, @computed, @action, making it super easy to use
+  build_runner: ^2.4.8 # A build system for Dart code generation and modular compilation
+  retrofit_generator: ^7.0.0+1 # Retrofit generator: dio client generator using source_gen and inspired by Chopper and Retrofit
+  json_serializable: ^6.7.1 # Generates utilities to aid in serializing to/from JSON
+  test: ^1.24.1 # A full featured library for writing and running Dart tests
+  bloc_test: ^9.1.5 # A testing library which makes it easy to test blocs
+  mockito: ^5.4.4 # A Dart mocking framework
 flutter:
   uses-material-design: true
