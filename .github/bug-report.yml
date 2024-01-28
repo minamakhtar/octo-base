@@ -1,0 +1,62 @@
+name: "\U0001F41E Report a problem"
+description: "Report an issue for this Octo Base project"
+title: "[BUG]: (fill in)"
+labels:
+  - bug
+body:
+  - type: dropdown
+    attributes:
+      label: What do you use this template for?
+      description: |
+        Please keep in mind that some problems are parser-specific.
+      options:
+        - "Proof of concept App"
+        - "MVP App"
+        - "A new App"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: |
+        A clear and concise description of what the bug or issue is
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How to replicate?
+      description: |
+        Explain the steps how to recreate the issues
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior?
+      description: |
+        A clear and concise description of what you expected to happen
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: By opening an issue, you agree to abide by the [Open JS Foundation Code of Conduct](https://eslint.org/conduct).
+  - type: textarea
+    attributes:
+      label: Device Information & Version
+      description: |
+        Please tell kind of device do you use to test/implement and etc
+      value: |
+        Emulator/Physical Device:
+        App Version:
+        Package Version:
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Participation
+      options:
+        - label: I am willing to submit a pull request for this issue.
+          required: false
+  - type: textarea
+    attributes:
+      label: Additional comments
+      description: Is there anything else that's important for the team to know?
